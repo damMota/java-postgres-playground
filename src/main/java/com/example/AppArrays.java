@@ -1,6 +1,9 @@
 package com.example;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+
+//import java.util.Iterator;
 
 public class AppArrays {
     public static void main(String[] args) {
@@ -39,6 +42,13 @@ public class AppArrays {
             }
             System.err.println();
         }
-
+        
+ //       ArrayList<Cliente> listaTeste = new ArrayList<Cliente>();
+  //      Iterator<Cliente> crunchifyIterator = listaTeste.iterator();
+    //    		while(crunchifyIterator.hasNext()) {
+      //  			System.out.println(crunchifyIterator.next().getCidade());
+        //		}
     }
+
+
 }

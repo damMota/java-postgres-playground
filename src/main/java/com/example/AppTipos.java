@@ -47,7 +47,7 @@ public class AppTipos {
         itens.forEach(val -> System.out.println(val));
         itens.forEach(System.out::println);
         
-        char sexo = 'm';
+        char sexo = 'm'; //aspas simples
         var aprovado = true; //variavel local que o compilador descobre - a partir da versao 10 java (variavel local apenas)
         //aprovado=110; //Não permite reatribuir como no javascript
         System.out.println("Tipo atribuido dinamicamente. Resultado: " + aprovado);
