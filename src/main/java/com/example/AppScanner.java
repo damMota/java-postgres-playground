@@ -3,10 +3,6 @@ package com.example;
 import java.util.Arrays;
 import java.util.Scanner;
 
-enum Sexo {
-    Masculino,
-    Femenino,
-}
 public class AppScanner {
     
     public static void main(String[] args) {
@@ -29,6 +25,8 @@ public class AppScanner {
         System.out.println("Disigite o ano nascimento: ");
         cliente.setAnoNascimento(scanner.nextInt());
 
+        scanner.nextLine(); //necessário quando anteriormente não pega uma string e vai entrar com uma agora
+
         System.out.println("Disigite o sexo (F ou M): ");
         String sexoStr = scanner.nextLine();
         char sexo_ = sexoStr.charAt(0);
@@ -39,6 +37,6 @@ public class AppScanner {
         System.out.println("Sexo: " + cliente.getSexo());
         System.out.println("Especial: " + cliente.isEspecial());
 
-       // scanner.
+       // scanner.Al
     }
 }
