@@ -1,13 +1,12 @@
-package com.example;
+package com.example.model;
 
-public class Marca {
-    int id;
-    String nome;
-
-    public int getId() {
+public class ReagiaoGeografica {
+    private Long id;
+    private String nome;
+    public Long getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
     public String getNome() {
@@ -17,5 +16,4 @@ public class Marca {
         this.nome = nome;
     }
     
-
 }

@@ -3,6 +3,9 @@ package com.example;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import com.example.model.Cliente;
+import com.example.model.Sexo;
+
 public class AppScanner {
     
     public static void main(String[] args) {

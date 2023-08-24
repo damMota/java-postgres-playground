@@ -2,10 +2,10 @@ package com.example;
 
 import java.util.Arrays;
 
-enum Sexo {
-    Masculino,
-    Femenino,
-}
+import com.example.model.Cliente;
+import com.example.model.Sexo;
+
+
 public class AppClasses {
     
     public static void main(String[] args) {

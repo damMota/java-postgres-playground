@@ -1,6 +1,7 @@
-package com.example;
+package com.example.model;
 
-class Cliente {
+
+public class Cliente {
     String nome;
     String cpf;
     private double renda;
