@@ -15,4 +15,6 @@ VS Code.
 
 Depois disso, você terá um ambiente como da imagem abaixo.
 
+By Alessandro 
+
 ![](vs-code-gitpod-postgres.png)
