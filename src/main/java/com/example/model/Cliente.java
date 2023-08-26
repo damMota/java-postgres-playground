@@ -9,6 +9,7 @@ public class Cliente {
     private int anoNascimento;
     private boolean especial;
     private String cidade;
+    private boolean jogador;
      
     public Cliente(){ // construtor não volta nada
         super();        
@@ -76,6 +77,12 @@ public class Cliente {
     }
     public void setCidade(String cidade) {
         this.cidade = cidade;
+    }
+    public boolean isJogador() {
+        return jogador;
+    }
+    public void setJogador(boolean jogador) {
+        this.jogador = jogador;
     }
 
     

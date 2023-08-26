@@ -1,6 +1,8 @@
 package com.example;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 public class AppTipos {
     public enum EstacoesDoAno{
         PRIMAVERA,
@@ -39,15 +41,28 @@ public class AppTipos {
         for(EstacoesDoAno estacao:EstacoesDoAno.values()){
                System.out.println(estacao); 
         }
-        int[] mat = {1,2,3,4};
+        Integer[] mat = {1,2,3,4};
         for(int value : mat){
             System.out.println(value);
         }
-        List<Integer> itens = Arrays.asList( 11, 10, 16, 5, 85 );
+        //List<Integer> itens = Arrays.asList( 11, 10, 16, 5, 85 );
+        List<Integer> itens = Arrays.asList( mat );
         itens.forEach(val -> System.out.println(val));
         itens.forEach(System.out::println);
+        itens.set(1,20);//re´lace
         
+        List<Integer> novaLista = itens.stream()
+        .filter((obj)->obj>=10)
+        .collect(Collectors.toList());
+
+        for(Integer item:novaLista){
+            System.out.printf("Filtro: %d",item);
+        }
         char sexo = 'm'; //aspas simples
+        String sexoStr = "ma scu lino";
+        char[] teste = sexoStr.toCharArray();
+        String nova = sexoStr.replace(' ','_');
+        System.out.println(nova);
         var aprovado = true; //variavel local que o compilador descobre - a partir da versao 10 java (variavel local apenas)
         //aprovado=110; //Não permite reatribuir como no javascript
         System.out.println("Tipo atribuido dinamicamente. Resultado: " + aprovado);

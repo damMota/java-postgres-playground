@@ -12,7 +12,11 @@ public class AppScanner {
         System.out.println("Criando classes");
         Cliente cliente = new Cliente();
         Scanner scanner = new Scanner(System.in);
-        
+        System.out.println("Digite se jogador: ");
+        if(scanner.nextLine().equals("S"))
+            cliente.setJogador(true);
+        else
+            cliente.setJogador(false);
         System.out.println("Disigite o neme: ");
         cliente.setNome(scanner.nextLine());
 
@@ -33,7 +37,6 @@ public class AppScanner {
         System.out.println("Disigite o sexo (F ou M): ");
         String sexoStr = scanner.nextLine();
         char sexo_ = sexoStr.charAt(0);
-
         cliente.setSexo(sexo_ == 'M' ? Sexo.Masculino : Sexo.Femenino);
         
         
